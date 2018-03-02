@@ -1,10 +1,3 @@
-/**
- * BoundedGrid.java  04/30/14
- *
- * @author - Robert Glen Martin
- * @author - School for the Talented and Gifted
- * @author - Dallas ISD
- */
 
 import java.util.List;
 import java.util.ArrayList;
@@ -56,11 +49,9 @@ public class BoundedGrid<E>
 	// Precondition:  loc is not null.
 	public boolean isValid(Location loc)
 	{
-		int r = loc.getRow();
-		int c = loc.getCol();
+		//hint:  use getNumRows and getNumCols
 
-		return 0 <= r && r < getNumRows() &&
-			    0 <= c && c < getNumCols();
+		throw new RuntimeException("INSERT MISSING CODE HERE");
 	}
 
 	// Removes the object at location loc from this grid and returns
@@ -68,24 +59,16 @@ public class BoundedGrid<E>
 	// Precondition:  loc is valid in this grid.
 	public E remove(Location loc)
 	{
-		E result = get(loc);
-		put(loc, null);
-		return result;
+		//hint:  use the put method to store a null at this location
+
+		throw new RuntimeException("INSERT MISSING CODE HERE");
 	}
 
 	// Returns a list of all occupied locations in this grid.
 	public List<Location> getOccupiedLocations()
 	{
-		List<Location> occupiedLocs = new ArrayList<Location>();
+		//hint:  use the get method to determine if a location is empty
 
-		for (int r = 0; r < getNumRows(); r++)
-			for (int c = 0; c < getNumCols(); c++)
-			{
-				Location loc = new Location(r, c);
-				if (get(loc) != null)
-					occupiedLocs.add(loc);
-			}
-
-		return occupiedLocs;
+		throw new RuntimeException("INSERT MISSING CODE HERE");
 	}
 }

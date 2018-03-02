@@ -1,10 +1,3 @@
-/**
- * Block.java  04/30/14
- *
- * @author - Robert Glen Martin
- * @author - School for the Talented and Gifted
- * @author - Dallas ISD
- */
 
 import java.awt.Color;
 
@@ -25,36 +18,34 @@ public class Block
 	// Gets the color of this block.
 	public Color getColor()
 	{
-		return color;
+		throw new RuntimeException("INSERT MISSING CODE HERE");
 	}
 
 	// Sets the color of this block to newColor.
 	public void setColor(Color newColor)
 	{
-		color = newColor;
+		throw new RuntimeException("INSERT MISSING CODE HERE");
 	}
 
 	// Gets the grid of this block,
 	// or null if this block is not contained in a grid.
 	public BoundedGrid<Block> getGrid()
 	{
-		return grid;
+		throw new RuntimeException("INSERT MISSING CODE HERE");
 	}
 
 	// Gets the location of this block,
 	// or null if this block is not contained in a grid.
 	public Location getLocation()
 	{
-		return location;
+		throw new RuntimeException("INSERT MISSING CODE HERE");
 	}
 
 	// Removes this block from its grid.
 	// Precondition:  this block is contained in a grid.
 	public void removeSelfFromGrid()
 	{
-		grid.remove(location);
-		grid = null;
-		location = null;
+		throw new RuntimeException("INSERT MISSING CODE HERE");
 	}
 
 	// Puts this block into location loc of grid gr.
@@ -63,14 +54,7 @@ public class Block
 	//                (2) loc is valid in gr.
 	public void putSelfInGrid(BoundedGrid<Block> gr, Location loc)
 	{
-		grid = gr;
-		location = loc;
-
-		Block oldObj = grid.get(location);
-		if (oldObj != null)
-			oldObj.removeSelfFromGrid();
-
-		grid.put(location, this);
+		throw new RuntimeException("INSERT MISSING CODE HERE");
 	}
 
 	// Moves this block to newLocation.
@@ -79,11 +63,10 @@ public class Block
 	//                (2) newLocation is valid in the grid of this block.
 	public void moveTo(Location newLocation)
 	{
-		grid.remove(location);
-		putSelfInGrid(grid, newLocation);
+		throw new RuntimeException("INSERT MISSING CODE HERE");
 	}
 
-	//returns a string with the location and color of this block
+	// Returns a string with the location and color of this block.
 	public String toString()
 	{
 		return "Block[location=" + location + ",color=" + color + "]";

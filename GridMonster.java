@@ -1,10 +1,3 @@
-/**
- * GridMonster.java  04/30/14
- *
- * @author - Robert Glen Martin
- * @author - School for the Talented and Gifted
- * @author - Dallas ISD
- */
 
 import java.awt.Color;
 import java.util.List;
